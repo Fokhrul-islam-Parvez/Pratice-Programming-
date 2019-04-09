@@ -1,0 +1,124 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
+import java.awt.Color;
+
+public class Smainmenu extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Smainmenu frame = new Smainmenu();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Smainmenu() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 734, 430);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton btnNewButton = new JButton("Add Book");
+		btnNewButton.setForeground(new Color(250, 235, 215));
+		btnNewButton.setBackground(new Color(128, 0, 0));
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				LaddBook add = new LaddBook();
+				add.setVisible(true);
+				dispose();
+			}
+		});
+		btnNewButton.setBounds(439, 33, 241, 32);
+		contentPane.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("View Books");
+		btnNewButton_1.setBackground(new Color(128, 0, 0));
+		btnNewButton_1.setForeground(new Color(250, 235, 215));
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Viewbook view=new Viewbook();
+				view.view();
+			}
+		});
+		btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnNewButton_1.setBounds(439, 93, 241, 32);
+		contentPane.add(btnNewButton_1);
+		
+		JButton btnNewButton_2 = new JButton("Issu Book");
+		btnNewButton_2.setBackground(new Color(139, 0, 0));
+		btnNewButton_2.setForeground(new Color(250, 235, 215));
+		btnNewButton_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				IssuBook issu = new IssuBook();
+				issu.setVisible(true);
+			}
+		});
+		btnNewButton_2.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnNewButton_2.setBounds(439, 158, 241, 32);
+		contentPane.add(btnNewButton_2);
+		
+		JButton btnNewButton_3 = new JButton("view Issued Books");
+		btnNewButton_3.setBackground(new Color(128, 0, 0));
+		btnNewButton_3.setForeground(new Color(250, 235, 215));
+		btnNewButton_3.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnNewButton_3.setBounds(439, 221, 241, 32);
+		contentPane.add(btnNewButton_3);
+		
+		JButton btnNewButton_4 = new JButton("Return Book");
+		btnNewButton_4.setBackground(new Color(128, 0, 0));
+		btnNewButton_4.setForeground(new Color(250, 235, 215));
+		btnNewButton_4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				returnBook book = new returnBook();
+				book.setVisible(true);
+				dispose();
+			}
+		});
+		btnNewButton_4.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnNewButton_4.setBounds(439, 282, 241, 32);
+		contentPane.add(btnNewButton_4);
+		
+		JButton btnNewButton_5 = new JButton("Logout");
+		btnNewButton_5.setBackground(new Color(128, 0, 0));
+		btnNewButton_5.setForeground(new Color(250, 235, 215));
+		btnNewButton_5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnNewButton_5.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnNewButton_5.setBounds(439, 335, 241, 34);
+		contentPane.add(btnNewButton_5);
+		
+		JLabel label_1 = new JLabel("");
+		label_1.setBounds(-671, -148, 1400, 640);
+		contentPane.add(label_1);
+		label_1.setIcon(new ImageIcon("E:\\image\\feature-brand-book.jpg"));
+	}
+}

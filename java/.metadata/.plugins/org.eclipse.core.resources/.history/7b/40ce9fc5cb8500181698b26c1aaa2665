@@ -1,0 +1,68 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.SwingConstants;
+import javax.swing.JButton;
+
+public class Home_Page007 extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Home_Page007 frame = new Home_Page007();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Home_Page007() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 632, 383);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Data Encryption and Decryption");
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 26));
+		lblNewLabel.setBounds(85, 62, 457, 40);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Welcome to ");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 26));
+		lblNewLabel_1.setBounds(210, 24, 170, 40);
+		contentPane.add(lblNewLabel_1);
+		
+		JButton btnNewButton = new JButton("Ceaser Cipher");
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 20));
+		btnNewButton.setBounds(97, 220, 419, 40);
+		contentPane.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("Transposition");
+		btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD, 20));
+		btnNewButton_1.setBounds(97, 271, 419, 40);
+		contentPane.add(btnNewButton_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("Using Algorithm");
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.ITALIC, 15));
+		lblNewLabel_2.setBounds(101, 181, 163, 19);
+		contentPane.add(lblNewLabel_2);
+	}
+}

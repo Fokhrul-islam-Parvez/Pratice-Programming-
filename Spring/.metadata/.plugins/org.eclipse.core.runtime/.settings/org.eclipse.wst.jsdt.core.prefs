@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+org.eclipse.wst.jsdt.core.PREF_JS_RUNTIME_INSTALLS_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<runtimeSettings/>\r\n
+org.eclipse.wst.jsdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.wst.jsdt.core.userLibrary.jsjar=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<userlibrary systemlibrary\="false" version\="1">\r\n\t<archive path\="G\:/Alert/sweetalert2.all.js"/>\r\n\t<archive path\="G\:/Alert/jquery.min.js"/>\r\n</userlibrary>\r\n

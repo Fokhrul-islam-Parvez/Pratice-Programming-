@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=paru0077/src&amp;lt;paru0077{Class007.java[Class008&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=ClassAssignment/src&amp;lt;{Student.java[Main&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=CProject/src&amp;lt;{Tprimes.java[Tprimes&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=ArrayProject/src&amp;lt;ArrayPackage{array2.java[Main&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=ArrayProject-1/src&amp;lt;arrayPackage1{Main.java[Main&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=LibraryManagementSystem/Resources\/sqlitejdbc-0.5.4.jar&amp;lt;org.ibex.nestedvm(Compiler.class[Compiler&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=LibraryManagementSystem/src&amp;lt;{Forgot.java[Forgot&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Data Encryption and Decryption/src&amp;lt;{Home_Page007.java[Home_Page007&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=bin/src&amp;lt;bin{Home_Page007.java[Home_Page007&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=bin/src&amp;lt;bin{Ceaser_Cipher.java[Ceaser_Cipher&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="100" key="DIALOG_X_ORIGIN"/>
+			<item value="8" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+</section>

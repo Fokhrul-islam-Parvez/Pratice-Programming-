@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+ <html>
+  <title>Registration</title> 
+  <head>
+   <script src="validation.js"></script>
+  </head>
+  <body>
+   <form >
+               <label>Name</label> <input type="text" name="username" id="name" onblur="namecheck()" >
+   <span id="namevalid"></span><br/>
+              <label>Email</label> <input type="email" name="useremail" id="email">
+   <span id="emailvalid"></span><br/>
+           <label>PassWord</label> <input type="password" name="userpassword" id="password">
+   <span id="passwordvalid"></span><br/>
+   <label>Confirm PassWord</label> <input type="password" name="userconfirm_password" id="confirm_password">
+   <span id="passwordvalid"></span><br/>
+                <label>Age</label> <input type="number" name="userage" id="age">
+   <span id="agevalid"></span><br/>
+             <label>Gender</label> <input type="radio" name="usergender" id="gender" value="male" required checked>Male  <input type="radio" name="usergender" id="gender" >Female
+             <label>Religion</label> <select><option> Muslim</option><option>Hindu</option>
+   </select>
+    
+              <input type="submit" value="submit">
+              
+              <output name="x" for="a b">aaaaaaaaaaaaa</output>
+   </form>
+  </body>
+ 
+ </html>

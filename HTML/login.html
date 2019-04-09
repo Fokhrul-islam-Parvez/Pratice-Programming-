@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>registration</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="mainsection">
+<div id="notification">Error!</div>
+	<div class="clear sec">
+		<h1>REGISTRATION FORM</h1>
+		<div class="clear social">
+			<div class="clear sociallink1">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<h5><a href="#">Login with facebook</a></h5>
+			</div>
+			<div class="clear sociallink1">
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<h5><a href="#">Login with twitter</a></h5>
+			</div>
+		</div>
+		<div class="clear logo">
+			<img src="lg.png" />
+			<h6>Or</h6>
+		</div>
+						<div class="inputsection">
+					<i class="decorate fa fa-user"></i>
+					<input id="fullName" onfocus="notOut()" class="inputfield" type="text" placeholder="Fullname" name="usrnm">
+				</div>
+				<div class="inputsection">
+					<i class="decorate fa fa-envelope"></i>
+					<input id="email" onfocus="notOut()" class="inputfield" type="email" placeholder="@gmail.com" name="email">
+				</div>
+				<div class="inputsection">
+					<i class="decorate fa fa-lock"></i>
+					<input id="pass" onfocus="notOut()" class="inputfield" type="password" placeholder="Password" name="email">
+				</div>
+				<div class="inputsection">
+					<i class="decorate fa fa-lock"></i>
+					<input id="rePass" onfocus="notOut()" class="inputfield" type="password" placeholder="Re-type password" name="email">
+				</div>
+				<div class="inputsection">
+					<i class="decorate fa fa-calendar"></i>
+					<input id="age" onfocus="notOut()" class="inputfield" type="number" placeholder="Age" name="email">
+				</div>
+				<div class="radioanddrop">
+					<div class="religion">
+						<label>Religion:</label>
+						<select id="religion" name="religion">
+							<option value="" selected="selected" disabled="disabled">-- select one --</option>
+							<option value="Islam">Islam</option>
+							<option value="Agnostic">Agnostic</option>
+							<option value="Atheist">Atheist</option>
+							<option value="Baha'i">Baha'i</option>
+							<option value="Buddhism">Buddhism</option>
+							<option value="Christianity">Christianity</option>
+							<option value="Hinduism">Hinduism</option>
+							<option value="Jainism">Jainism</option>
+							<option value="Juche">Juche</option>
+							<option value="Judaism">Judaism</option>
+							<option value="Neo-Paganism">Neo-Paganism</option>
+							<option value="Nonreligious">Nonreligious</option>
+							<option value="Secular">Secular</option>
+							<option value="Shinto">Shinto</option>
+							<option value="Sikhism">Sikhism</option>
+							<option value="Spiritism">Spiritism</option>
+							<option value="Tenrikyo">Tenrikyo</option>
+							<option value="Zoroastrianism">Zoroastrianism</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+					<div class="Gender">
+						<fieldset>
+							<legend>Gender</legend>
+
+							<div>
+								<input type="radio" id="male" name="drone" value="male" checked />
+								<label>Male</label>
+							</div>
+
+							<div>
+								<input type="radio" id="female" name="drone" value="female" />
+								<label>Female</label>
+							</div>
+
+							<div>
+								<input type="radio" id="others" name="drone" value="others" />
+								<label>Others</label>
+							</div>
+
+						</fieldset>
+					</div>
+				</div>
+				<div class="notice">
+					<input id="terms" type="checkbox" name="remember" /><span>Terms and condition</span>
+				</div>
+				<div class="inputsection">
+					<button onclick="validate()" class="login">REGISTER</button>
+				</div>
+			</div>
+		</div>
+		<div class="registration">
+			<h5>Not a member?<a href="#">sign up now!</a></h5>
+		</div>
+	</div>
+<script>
+	function $js(id) {
+		return document.getElementById(id);
+	}
+	function $print(data) {
+		console.log(data);
+	}
+	var notif = $js('notification');
+	function notOut(){
+		notif.style.display = 'none';		
+	}
+	function validate() {
+		if($js('fullName').value.length < 5){
+			notif.style.display = 'block';
+			notif.textContent = "Name can't be < 5 character!"
+		}
+		else if($js('email').value == ""){
+			notif.style.display = 'block';
+			notif.textContent = "Email can not be blank!"
+		}
+		else if($js('pass').value == ""){
+			notif.style.display = 'block';
+			notif.textContent = "Password can't be blank!"
+		}
+		else if($js('pass').value != $js('rePass').value){
+			notif.style.display = 'block';
+			notif.textContent = "Password Missmatched!"
+		}
+		else if(($js('age').value == "") || (parseInt($js('age').value) < 18)){
+			notif.style.display = 'block';
+			notif.textContent = "Sorry you are under age!"
+		}
+		else if(!($js('terms').checked)){
+			notif.style.display = 'block';
+			notif.textContent = "You must accept terms and conditions!"
+		}
+		else{
+			notif.style.display = 'block';
+			notif.style.backgroundColor = 'green';
+			notif.textContent = "Sucess!"
+		}
+	}
+</script>
+</body>
+
+</html>

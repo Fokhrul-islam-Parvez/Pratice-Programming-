@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataProtectionUserConfig SchemaVersion="1">
+  <UserName>Pervez</UserName>
+  <FriendlyName>Fokhrul Islam Parvez</FriendlyName>
+  <PCName>DESKTOP-BQM25GM</PCName>
+  <UserId>af3b7d68-bd1c-462e-b63a-1ff254cbeb1a</UserId>
+  <Library>
+    <LibraryName>*2112ab0a-c86a-4ffe-a368-0de96e47012e</LibraryName>
+    <Folder>C:\Users\Pervez\Music</Folder>
+  </Library>
+  <Library>
+    <LibraryName>*e25b5812-be88-4bd9-94b0-29233477b6c3</LibraryName>
+    <Folder>C:\Users\Pervez\Pictures\Saved Pictures</Folder>
+  </Library>
+  <Library>
+    <LibraryName>*491e922f-5643-4af4-a7eb-4e7a138d8174</LibraryName>
+    <Folder>C:\Users\Pervez\Videos</Folder>
+  </Library>
+  <Library>
+    <LibraryName>*2b20df75-1eda-4039-8097-38798227d5b7</LibraryName>
+    <Folder>C:\Users\Pervez\Pictures\Camera Roll</Folder>
+  </Library>
+  <Library>
+    <LibraryName>*7b0db17d-9cd2-4a93-9733-46cc89022e7c</LibraryName>
+    <Folder>C:\Users\Pervez\Documents</Folder>
+    <Folder>C:\Users\Pervez\OneDrive\Documents</Folder>
+  </Library>
+  <Library>
+    <LibraryName>*a990ae9f-a03b-4e80-94bc-9912d7504104</LibraryName>
+    <Folder>C:\Users\Pervez\Pictures</Folder>
+  </Library>
+  <UserFolder>C:\Users\Pervez\.android</UserFolder>
+  <UserFolder>C:\Users\Pervez\.cordova</UserFolder>
+  <UserFolder>C:\Users\Pervez\.dotnet</UserFolder>
+  <UserFolder>C:\Users\Pervez\.eclipse</UserFolder>
+  <UserFolder>C:\Users\Pervez\.nuget</UserFolder>
+  <UserFolder>C:\Users\Pervez\.p2</UserFolder>
+  <UserFolder>C:\Users\Pervez\.templateengine</UserFolder>
+  <UserFolder>C:\Users\Pervez\.tooling</UserFolder>
+  <UserFolder>C:\Users\Pervez\.VirtualBox</UserFolder>
+  <UserFolder>C:\Users\Pervez\Camtesia</UserFolder>
+  <UserFolder>C:\Users\Pervez\jre-8u181-windows-x64</UserFolder>
+  <UserFolder>C:\Users\Pervez\serverjre-10.0.2_windows-x64_bin</UserFolder>
+  <UserFolder>C:\Users\Pervez\source</UserFolder>
+  <UserFolder>C:\Users\Pervez\VirtualBox VMs</UserFolder>
+  <UserFolder>C:\Users\Pervez\Searches</UserFolder>
+  <UserFolder>C:\Users\Pervez\Desktop</UserFolder>
+  <UserFolder>C:\Users\Pervez\OneDrive</UserFolder>
+  <UserFolder>C:\Users\Pervez\Contacts</UserFolder>
+  <UserFolder>C:\Users\Pervez\Pictures</UserFolder>
+  <UserFolder>C:\Users\Pervez\Favorites</UserFolder>
+  <UserFolder>C:\Users\Pervez\Videos</UserFolder>
+  <UserFolder>C:\Users\Pervez\Music</UserFolder>
+  <UserFolder>C:\Users\Pervez\Downloads</UserFolder>
+  <UserFolder>C:\Users\Pervez\Documents</UserFolder>
+  <UserFolder>C:\Users\Pervez\Links</UserFolder>
+  <UserFolder>C:\Users\Pervez\Saved Games</UserFolder>
+  <LocalCatalogPath1>C:\Users\Pervez\AppData\Local\Microsoft\Windows\FileHistory\Configuration\Catalog1.edb</LocalCatalogPath1>
+  <LocalCatalogPath2>C:\Users\Pervez\AppData\Local\Microsoft\Windows\FileHistory\Configuration\Catalog2.edb</LocalCatalogPath2>
+  <StagingArea>
+    <StagingAreaPath>C:\Users\Pervez\AppData\Local\Microsoft\Windows\FileHistory\Data</StagingAreaPath>
+    <StagingAreaMaximumCapacity>4992904704</StagingAreaMaximumCapacity>
+    <StagingAreaWarningThreshold>3744678528</StagingAreaWarningThreshold>
+  </StagingArea>
+  <AvailabilityPolicies>
+    <TargetAbsenceTime>5</TargetAbsenceTime>
+    <TimeInUnprotectedState>3</TimeInUnprotectedState>
+  </AvailabilityPolicies>
+  <RetentionPolicies>
+    <RetentionPolicyType>DISABLED</RetentionPolicyType>
+    <MinimumRetentionAge>365</MinimumRetentionAge>
+  </RetentionPolicies>
+  <DPFrequency>3600</DPFrequency>
+  <DPStatus>DISABLED</DPStatus>
+  <Target>
+    <TargetName>PARVEZ (I:)</TargetName>
+    <TargetUrl>I:\</TargetUrl>
+    <TargetVolumePath>\\?\Volume{7d64607d-f777-11e7-93d8-705a0f5ff062}\</TargetVolumePath>
+    <TargetDriveType>REMOVABLE</TargetDriveType>
+    <TargetConfigPath1>Pervez\DESKTOP-BQM25GM\Configuration\Config1.xml</TargetConfigPath1>
+    <TargetConfigPath2>Pervez\DESKTOP-BQM25GM\Configuration\Config2.xml</TargetConfigPath2>
+    <TargetCatalogPath1>Pervez\DESKTOP-BQM25GM\Configuration\Catalog1.edb</TargetCatalogPath1>
+    <TargetCatalogPath2>Pervez\DESKTOP-BQM25GM\Configuration\Catalog2.edb</TargetCatalogPath2>
+    <TargetBackupStorePath>Pervez\DESKTOP-BQM25GM\Data</TargetBackupStorePath>
+    <TargetWarningThreshold>98</TargetWarningThreshold>
+  </Target>
+</DataProtectionUserConfig>

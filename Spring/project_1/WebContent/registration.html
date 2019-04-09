@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>registration</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script type="text/javascript" src="myScript.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="mainsection">
+<div id="notification">Error!</div>
+	<div class="clear sec">
+		<h1>REGISTRATION FORM</h1>
+		<div class="clear social">
+			<div class="clear sociallink1">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<h5><a href="#">Login with facebook</a></h5>
+			</div>
+			<div class="clear sociallink1">
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<h5><a href="#">Login with twitter</a></h5>
+			</div>
+		</div>
+		<div class="clear logo">
+			<img src="image/lg.png" />
+			<h6>Or</h6>
+		</div>
+						<div class="inputsection">
+					<i class="decorate fa fa-user"></i>
+					<input id="fullName" onchange="checkName()" class="inputfield" type="text" placeholder="Fullname" name="usrnm"><span class="spn" id="validName"></span>
+                    
+				</div>
+				<div class="inputsection">
+					<i class="decorate fa fa-envelope"></i>
+					<input id="email" onchange="checkEmail()"  class="inputfield" type="email" placeholder="@gmail.com" name="email"> <span class="spn" id="validEmail">something</span>
+				</div>
+				<div class="inputsection">
+					<i class="decorate fa fa-lock"></i>
+					<input id="pass"onchange="checkPass()"  class="inputfield" type="password" placeholder="Password" name="email"> <span class="spn" id="validPass">something</span>
+				</div>
+				<div class="inputsection">
+					<i class="decorate fa fa-lock"></i>
+					<input id="rePass" onchange="checkRe_pass()"  class="inputfield" type="password" placeholder="Re-type password" name="email"> <span class="spn" id="validRe_pass">something</span>
+				</div>
+				<div class="inputsection">
+					<i class="decorate fa fa-calendar"></i>
+					<input id="age" onchange="checkAge()"  min="0"  class="inputfield" type="number" placeholder="Age" name="email"> <span class="spn" id="validAge">something</span>
+				</div>
+				<div class="radioanddrop">
+					<div class="religion">
+						<label id="f_color">Religion:</label>
+						<select id="religion" name="religion">
+							<option value="" selected="selected" disabled="disabled">-- select one --</option>
+							<option value="Islam">Islam</option>
+							<option value="Agnostic">Agnostic</option>
+							<option value="Atheist">Atheist</option>
+							<option value="Baha'i">Baha'i</option>
+							<option value="Buddhism">Buddhism</option>
+							<option value="Christianity">Christianity</option>
+							<option value="Hinduism">Hinduism</option>
+							<option value="Jainism">Jainism</option>
+							<option value="Juche">Juche</option>
+							<option value="Judaism">Judaism</option>
+							<option value="Neo-Paganism">Neo-Paganism</option>
+							<option value="Nonreligious">Nonreligious</option>
+							<option value="Secular">Secular</option>
+							<option value="Shinto">Shinto</option>
+							<option value="Sikhism">Sikhism</option>
+							<option value="Spiritism">Spiritism</option>
+							<option value="Tenrikyo">Tenrikyo</option>
+							<option value="Zoroastrianism">Zoroastrianism</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+					<div class="Gender">
+						<fieldset>
+							<legend id="f_color">Gender</legend>
+
+							<div id="f_color">
+								<input type="radio" id="male" name="drone" value="male" checked />
+								<label>Male</label>
+							</div>
+
+							<div id="f_color">
+								<input type="radio" id="female" name="drone" value="female" />
+								<label>Female</label>
+							</div>
+
+							<div id="f_color">
+								<input type="radio" id="others" name="drone" value="others" />
+								<label>Others</label>
+							</div>
+
+						</fieldset>
+					</div>
+				</div>
+				<div class="notice">
+					<input id="terms" type="checkbox" name="remember" /><span>Terms and condition</span>
+				</div>
+				<div class="inputsection">
+					<button onclick="validate()" class="login" id="f_color">REGISTER</button>
+				</div>
+			</div>
+	
+		<div class="registration">
+			<h5>Not a member?<a href="#">sign up now!</a></h5>
+		</div>
+	
+</body>
+
+</html>

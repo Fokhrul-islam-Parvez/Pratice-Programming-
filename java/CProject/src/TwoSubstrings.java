@@ -1,0 +1,36 @@
+import java.util.*;
+public class TwoSubstrings {
+public static void main(String []ags)
+{
+	Scanner sc=new Scanner(System.in);
+	String s=sc.nextLine();
+	int k=0, a=s.length();
+	for(int i=0;i<a-1;i++)
+	{
+		char c=s.charAt(i);
+		if(c=='A')
+		{
+			c=s.charAt(i+1);
+			if(c=='B')
+			{
+				k++;
+				i++;
+			}
+		}
+		else if(c=='B')
+		{
+			c=s.charAt(i+1);
+			if(c=='A')
+			{
+				k++;
+				i++;
+			}
+		}
+		
+	}
+	if(k>=2)
+		System.out.println("YES\n");
+	else
+		System.out.println("NO\n");
+}
+}

@@ -1,0 +1,81 @@
+#include<stdio.h>
+int main()
+{
+    int n[14],a[14];
+    int i;
+    for(i=0;i<14;i++)
+    {
+        scanf("%d",&n[i]);
+        a[i]=n[i];
+    }
+    int j,k=0,m=0,t,p,t1=0,t2=0,ans=0,ans2=0,l=14;
+    for(i=0;i<14;i++)
+    {
+        a[i]=0;
+        if(n[i]!=0)
+        l=-1;
+        t=n[i]/14;
+        if(t==0)
+        {
+            for(j=i+1;j<14-k-l;j++)
+               {
+                   if(m==n[i])
+                       {
+                           break;
+
+                       }
+
+                   if(j>13)
+                   {
+                       k=m;
+                       j=0;
+                   }
+                   a[j]=a[j]+1;
+                   m++;
+               }
+        }
+        else
+        {
+            t1=t*14;
+            t2=n[i]-14;
+            for(j=i+1;j<=14-k;j++)
+               {
+                   if(j>13)
+                   {
+                       k=m;
+                       m=0;
+                       j=0;
+                   }
+                   a[j]=a[j]+t;
+                   m++;
+               }
+               k=0;
+               m=0;
+            for(p=j;p<t2-k;p++)
+            {
+                if(p>13)
+                   {
+                       k=m;
+                       m=0;
+                       p=0;
+                   }
+                   a[p]=a[p]+1;
+                   m++;
+            }
+        }
+
+        for(j=0;j<14;j++)
+        {
+            if(a[j]%2==0)
+            {
+                ans=ans+a[j];
+                a[j]=n[j];
+            }
+        }
+            if(ans2<ans)
+                ans2=ans;
+            ans=0;
+        m=0,k=0,j=0;
+    }
+    printf("%d\n",ans2);
+}

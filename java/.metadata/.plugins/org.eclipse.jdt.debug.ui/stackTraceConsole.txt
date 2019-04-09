@@ -1,0 +1,3 @@
+JDateChooser dateChooser = new JDateChooser();
+		dateChooser.setBounds(278, 437, 253, 20);
+		contentPane.add(dateChooser);

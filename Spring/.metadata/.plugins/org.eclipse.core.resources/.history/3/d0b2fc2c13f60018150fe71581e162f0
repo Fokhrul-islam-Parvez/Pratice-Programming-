@@ -1,0 +1,67 @@
+package test;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import oracle.jdbc.OracleDriver;
+
+public class testConn {
+	static String query;
+	static Connection con;
+	 static Statement st;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public static Statement setConnection() throws ClassNotFoundException
+	{
+		
+		try {
+			
+			
+			//Class.forName("oracle.jdbc.OracleDriver");
+			//DriverManager.registerDriver(driver);
+			
+			OracleDriver driver= new OracleDriver();
+			DriverManager.registerDriver(driver);
+			
+			 con=DriverManager.getConnection("url", "user", "1235");
+			Statement st=con.createStatement();
+			return st;
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+		return null;
+	}
+	public static ResultSet ExecuteQuery()
+	{
+		ResultSet rs;
+		try {
+			rs = st.executeQuery(query);
+			ConnectionClose( st,con);
+			return rs;
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+		ConnectionClose( st,con);
+		return null;
+		
+		
+	}
+	public static void ConnectionClose(Statement st,Connection con)
+	{
+		try {
+			st.close();
+			con.close();
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+	}
+
+}

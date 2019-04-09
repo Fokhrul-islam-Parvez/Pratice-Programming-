@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+ label
+ {
+  float: right;
+  padding: 10px;
+ }
+ input
+ {
+ 	padding: 8px;
+ 	
+ }
+span
+{
+ color: red;
+}
+
+</style>
+<link href="css/style2.css" rel="stylesheet" type="text/css">
+</head>
+<body class="second">
+<header>
+  <ul >
+   <li><a href="contract.html">Contract us</a></li>
+  <li><a href="registration.html">Sign up</a></li>
+  <li><a href="login.html">Sign in</a></li>
+   <li><a href="about.html">About</a></li>
+   <li class="active"><a href="index.html">Home</a></li>
+ </ul>
+</header>
+<div class="second">
+<form action="registration" method="post">
+  <div id="first">
+   <h1>Create Your Account</h1>
+   <h3>Already have an Account?  <span><a href=login.html> Sign in</a></span></h3> 
+    <div id="third">
+     <table id="tab">
+       <tr>
+        <td><label>Email Address<span id="req">*</span></label></td>
+        <td> <input type="email" name="email" required onchange="checkEmail()"></td>
+        <td><small><span id="mesEmail">Your email address is your user name.</span></small></td>
+       </tr>
+       <tr><td><td><small><span id="validEmail"></span></small></td></tr>
+       <tr>
+        <td><label>Password<span id="req">*</span></label></td>
+        <td> <input type="password" name="pass" required onchange="checkPass()"></td>
+        <td><span id="mesPass"><small>Passwords must have upper and lower case letters, <br>at least 1 number, not match any part of your email,<br>  and be at least 8 characters long.</small></span></td>
+       </tr>
+       <tr><td><td><small><span id="validPass"></span></small></td></tr>
+       <tr>
+        <td><label>Retype Password<span id="req">*</span></label></td>
+        <td> <input type="password" name="reTypePass" required onchange="checkReTypeEmail()"></td>
+       </tr>
+       <tr><td><td><small><span id="validReTypePass"></span></small></td></tr>
+       <tr>
+        <td><label>Name<span id="req">*</span></label></td>
+        <td> <input type="text" name="fname" required placeholder="First or Given Name" onchange="checkFname()"></td>
+        <td> <input type="text" name="lname" required placeholder="Last Name" onchange="checkLname()"></td>
+       </tr>
+       <tr><td><td><small><span id="validFname"></span></small></td><td><small><span id="validLname"></span></small></td></tr>
+        <tr>
+        <td><label>Birth Day<span id="req">*</span></label></td>
+        <td> <input type="date" data-date="" data-date-format="DD MMMM YYYY" placeholder="DD-MM-YYYY" name="birthDay" onchange="checkBirthDay()"></td>
+       </tr>
+       <tr><td><td><small><span id="validBirthDay"></span></small></td></tr>
+       <tr>
+        <td><label>Gender<span id="req">*</span></label></td>
+        <td> <input type="radio" name="gender" id="male" value="Male" checked> Male <input type="radio" name="gender" id="female" value="Female" > Female </td>
+       </tr>
+        <tr><td><td><small><input id="terms" type="checkbox" name="remember"/><span>Terms and condition</span></small></td></tr>
+        <tr>
+         <td></td><td><input type="submit" value="Creat Account" id="creatAccount" onclick="checkSubmit()"></td>
+        </tr>
+     </table>
+    </div>
+   </div>
+ </form>
+ </div>
+ <footer>
+ <h5>Copyright © 2018 Parvez. All Rights Reserved.</h5>
+ </footer>
+</body>
+</html>

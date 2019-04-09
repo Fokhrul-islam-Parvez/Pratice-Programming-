@@ -1,0 +1,201 @@
+#notification {
+			border: 1px solid #BABABA;
+			border-radius: 8px;
+			background: #BCD6CC;
+			position: fixed;
+			right: 100px;
+			top: 320px;
+			color: #000000;
+			padding: 6px;
+			font-size: 22px;
+			z-index: 100;
+			display: none;
+}
+
+.clear{
+	overflow:hidden;
+}
+.mainsection{
+	background: url('image/back.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sec{
+    width: auto;
+    margin: 50px auto;
+    
+}
+.sec h1{
+	text-align: center;
+	font-size: 50px;
+	font-family: arial;
+	color: #041F46;
+	font-weight: bold;
+}
+.loginsection h1{}
+.social{
+	margin: 50px 0px 20px 50px;
+}
+.sociallink1 a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.sociallink1 {
+	width: 280px;
+	background: #0074E8;
+	color: #ffff;
+	float: left;
+	margin-right: 30px;
+	height: 50px;
+	border-radius: 5px;
+	border: 1px solid #555555;
+}
+.sociallink1 i {
+	float: left;
+	padding-top: 10px;
+	background: #0074E8;
+	font-size: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	border-right: 1px solid #555555;
+}
+.sociallink1 h5 {
+	float: right;
+	font-size: 18px;
+	position: relative;
+	margin-right: 60px;
+	top: -15px;
+}
+.sociallink1 h5 a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.logo{
+	margin-bottom: 10px;
+}
+.logo img {
+	margin-left: 270px;
+	width: 160px;
+	margin-top: 10px;
+	position: relative;
+	margin-bottom: 20px;
+}
+.logo h6 {
+	position: absolute;
+	font-size: 18px;
+	color: #000000;
+	margin-top: -55px;
+	margin-left: 340px;
+}
+.inputsection{
+	margin-left: 50px;
+}
+.inputsection input {
+	width: 575px;
+	height: 35px;
+	font-size: 20px;
+	padding: 4px;
+	border-radius: 6px;
+	margin-bottom: 25px;
+	position: relative;
+	text-indent: 30px;
+	border: 1px solid #828282;
+}
+.inputsection input:hover{
+	color:#007EFF;
+	border: 1px solid #007EFF;
+	cursor: pointer;
+}
+.inputsection i {
+	position: absolute;
+	font-size: 45px;
+	color: #828282;
+	left: 900px;
+	margin-top: 5px;
+	padding-left: 15px;
+}
+.inputsection span {
+	position: relative;
+	top: -15px;
+	margin-left: 10px;
+}
+.notice {
+	color: #696969;
+	font-size: 20px;
+	margin-left: 50px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.notice input{
+	margin-right: 10px;
+}
+.notice h5 {
+	float: right;
+	margin-right: 50px;
+	margin-top: 0px;
+	padding-top: 8px;
+}
+.notice a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.notice a:hover{
+	color: #0866CA;
+	
+}
+.religion {
+	margin-bottom: 25px;
+}
+.religion label{
+	font-size: 18px;
+	margin-left: 50px;
+}
+.religion select {
+	border-radius: 5px;
+	margin-left: 20px;
+	width: 200px;
+	height: 30px;
+	font-size: 16px;
+	box-shadow: 2px 3px #838989;
+}
+#f_color{
+	color:white;
+}
+.login {
+	width: 610px;
+	height: 53px;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 6px;
+	position: relative;
+	text-indent: 30px;
+	border: 1px solid #0D63AB;
+	font-size: 25px;
+	background: #254E77;
+	cursor: pointer;
+}
+.registration {
+	margin-left: 265px;
+	font-size: 20px;
+	color: #858585;
+	margin-top: 0px;
+	padding-left: 290px;
+}
+.registration h5{}
+.registration a{
+	text-decoration:none;
+	color: #0866CA;
+}
+.Gender{
+}
+.Gender input{
+	    margin: 5px;
+}
+.Gender fieldset {
+	width: 565px;
+	border-radius: 10px;
+	border: 1px solid #FFFFFF;
+	margin-left: 50px;
+}

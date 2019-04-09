@@ -1,0 +1,42 @@
+package package7;
+
+public class Class007 {
+	public static int maximum(int a,int b){
+		if(a<b)
+			return b;
+		else
+			return a;
+	}
+	public static int minimum(int a,int b){
+		if(a<b)
+			return a;
+		else
+			return b;
+	}
+	public static int subtract (int c,int d){
+		int a=c;
+		int b=d;
+		int mx=maximum(a,b);
+		int min=minimum(a,b);
+		int sub=mx-min;
+		return sub;
+	}
+	public static double division (int c,int d){
+		int a=c;
+		int b=d;
+		int mx=maximum(a,b);
+		int min=minimum(a,b);
+		double div=mx/min;
+		return div;
+	}
+	
+	
+	public static void main(String [] arg){
+		int a=100;
+		int b=9;
+		System.out.println("Subtract (" +maximum(a,b)+ " - "+minimum(a,b)+") ="+subtract(a,b));
+		System.out.println("Division (" +maximum(a,b)+ " / "+minimum(a,b)+") ="+division(a,b));
+		
+	}
+
+}

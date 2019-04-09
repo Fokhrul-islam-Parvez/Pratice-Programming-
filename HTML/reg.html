@@ -1,0 +1,40 @@
+<DoCTYPE html>
+<html>
+<head>
+ <script src="script.js"></script>
+</head>
+ <body>
+  <table>
+   <tr>
+    <td>First Name</td>
+    <td>Last Name</td>
+   </tr>
+   <tr>
+    <td><input onchange="checkName()" id="fullName" type="text" placeholder="First Name" name="f_name" required> </td><td><span id="validName">somet</span></td>
+    <td><input type="text" placeholder="Last Name" name="l_name" required> </td>
+   </tr>
+   <tr>
+  <td>
+  <label for="email">Email </label>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <input type="email" name="email" required placeholder="enter your valid Email">
+  </td>
+  </tr>
+  <tr>
+   <td> <label>Password</label></td>
+  </tr>
+  <tr>
+   <td> <input type="password" name="password" id="pass" required placeholder="enter Password" onchange="passwordcheck()"> </td>
+   <td><span id="passwordvalid"></span> </td>
+  </tr>
+  <tr><td> <label>Gender</label></td></tr>
+  <tr><td><input type="radio" name="gender" value="male" checked> Male
+  <td><input type="radio" name="gender" value="female" checked> Female
+  <td><input type="radio" name="gender" value="other" checked> Other</td></td></tr>
+  </table>
+  
+ </body>
+</html>

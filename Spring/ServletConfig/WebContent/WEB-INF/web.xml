@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<servlet>
+  <servlet-name>sc</servlet-name>
+  <servlet-class>test.Sconfig</servlet-class>
+  <init-param>
+   <param-name>count</param-name>
+   <param-value>500</param-value>
+  </init-param> 
+</servlet>
+
+<servlet-mapping>
+ <servlet-name>sc</servlet-name>
+ <url-pattern>/xyz</url-pattern>
+</servlet-mapping>
+</web-app>

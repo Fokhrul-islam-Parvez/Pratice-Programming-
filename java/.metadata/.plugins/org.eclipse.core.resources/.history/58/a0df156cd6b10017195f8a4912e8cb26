@@ -1,0 +1,22 @@
+import java.util.*;
+public class CAPSlOCK {
+	public static void main(String [] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		s=s.toLowerCase();
+		String c="";
+		String d="";
+		for(int i=0;i<s.length();i++)
+		{
+			d=d+s.charAt(i);
+			if(i==0);
+			d=d.toUpperCase();
+			c=c+d;
+			
+		}
+       System.out.println(c);
+		
+	}
+
+}

@@ -1,0 +1,22 @@
+import java.util.*;
+public class AfterAdhoc {
+public static void main(String []arg)
+{
+	Scanner sc=new Scanner(System.in);
+	int n=1;
+	while(n!=0)
+	{
+		
+		n=sc.nextInt();
+		String s1=sc.nextLine();
+		String s=sc.nextLine();
+		for(int i=0;i<=n*n;i=i+n)
+		{
+			String a=s.substring(i, i+n);
+			StringBuffer sb1=new StringBuffer(a);
+			sb1=sb1.reverse();	
+			System.out.print(sb1);
+		}
+	}
+}
+}

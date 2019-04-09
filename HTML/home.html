@@ -1,0 +1,48 @@
+<DOCTYPE html>
+<html>
+ <head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script rel="script.js"></script>
+  <style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+</style>
+ </head>
+ <body>
+  <div>
+   <h1>Summer-2018</h1>
+   <table>
+   <tr> <td><label> Select Section</label></td>
+   <td><select name="section">
+    <option value="a">A</option>
+    <option value="a">B</option>
+    <option value="a">C</option>
+    <option value="a">D</option>
+   </select></td></tr>
+  <tr> <td> <label>Course Name</label></td>
+    <td><input type="text" name="c_name" placeholder="Course Name"></td></tr>
+   <tr><td> <label>Course Code</label></td> <td> <input type="text" name="c_code" placeholder="Course Code"></td></tr>
+   <tr><td> <label>Course Credit</label></td> <td> <input type="number" name="c_cradit"min="2" max="5" placeholder="Course cradit"></td></tr>
+   <tr><td> <label>Course Teacher name</label></td> <td> <input type="text" name="c_t_name" placeholder="Course Teacher Name"></td></tr>
+     <tr> <td></td><td><input type="submit" value="Submit" onclick="check()"></td></tr>
+  </table>
+    </div>
+    
+    <div id="02">
+     <table class="01" >
+      <tr >
+       <th class="01">Section</th>
+       <th>Course Name</th>
+       <th>Course Code</th>
+       <th>Course Credit</th>
+      </tr>
+     </table>
+    </div>
+ </body>
+</html>
